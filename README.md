@@ -1,5 +1,10 @@
 # css-styles
 
+[![Build Status](https://img.shields.io/travis/timhudson/css-styles.svg?style=flat-square)](https://travis-ci.org/timhudson/css-styles)
+[![Dependency Status](https://img.shields.io/david/timhudson/css-styles.svg?style=flat-square)](https://david-dm.org/timhudson/css-styles)
+
+[![NPM](https://nodei.co/npm/css-styles.png?compact=true)](https://nodei.co/npm/css-styles/)
+
 Parse and stringify inlined CSS declarations
 
 ## Example

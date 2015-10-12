@@ -1,0 +1,23 @@
+{
+  "name": "css-styles",
+  "description": "Parse and stringify inlined CSS declarations",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && tape tests.js"
+  },
+  "devDependencies": {
+    "standard": "^5.3.1",
+    "tape": "^4.2.1"
+  },
+  "repository": "git://github.com/timhudson/css-styles.git",
+  "author": "Tim Hudson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timhudson/css-styles/issues"
+  },
+  "dependencies": {
+    "camelcase": "^1.2.1",
+    "decamelize": "^1.0.0"
+  }
+}

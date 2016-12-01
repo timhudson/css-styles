@@ -6,8 +6,12 @@ module.exports.parse = function (string) {
 
   return string.split(';').reduce(function (memo, declaration) {
     if (!declaration) return memo
-    const parts = declaration.split(':')
-    memo[camelcase(parts[0])] = parts[1].trim()
+
+    var keyEndIndex = declaration.indexOf(':')
+    const key = declaration.substring(0, keyEndIndex)
+    const prop = declaration.substring(keyEndIndex + 1).trim()
+
+    memo[camelcase(key)] = prop
     return memo
   }, {})
 }

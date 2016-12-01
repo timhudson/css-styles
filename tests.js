@@ -4,10 +4,13 @@ const cssStyles = require('./')
 test('cssStyle.parse', function (t) {
   t.plan(1)
 
-  var styles = cssStyles.parse('background: #bada55; font-size: 12px')
+  var styles = cssStyles.parse(
+    'color: #bada55; background: url(https://test.com/example.jpg); font-size: 12px'
+  )
 
   t.deepEqual(styles, {
-    background: '#bada55',
+    background: 'url(https://test.com/example.jpg)',
+    color: '#bada55',
     fontSize: '12px'
   })
 })
